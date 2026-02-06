@@ -1,0 +1,57 @@
+# Ficheiro de Configuração com Credenciais
+config.php
+basedados.php
+
+# Ficheiros de ambiente
+.env
+.env.local
+.env.*.local
+
+# Ficheiros SQL com dados
+*.sql
+*.sql.gz
+*.sql.zip
+
+# Uploads de utilizadores
+imagens/
+uploads/
+!imagens/.gitkeep
+
+# Screenshots (podem conter dados sensíveis)
+screenshots/
+!screenshots/.gitkeep
+
+# Ficheiros de sistema
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+error_log
+php_errors.log
+
+# Ficheiros temporários do PHP
+*.php~
+*.phps
+
+# Composer (se usar)
+/vendor/
+
+# Node modules (se usar)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Backups
+*.bak
+*.backup
+backup/

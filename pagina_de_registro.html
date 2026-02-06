@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema de login e registo de utilizadores</title>
+
+    <style>
+  
+
+  body{
+margin: 0px 250px; 
+background: rgb(255,216,130);
+background: linear-gradient(90deg, rgba(255,216,130,1) 5%, rgba(171,232,252,1) 28%, rgba(163,255,167,1) 67%, rgba(255,165,165,1) 94%); 
+}
+
+.primeira{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  
+}
+
+.segunda{
+  width:49%;
+  height: 200px;
+  float: left;
+}
+
+.terceira{
+  width:40%;
+  height: 400px;
+  float: right;
+  
+
+}
+
+#imagem1{
+  border-radius:10%;
+  height: 400px;
+}
+
+#nome, #apelido, #email, #user_name, #password{
+
+  height: 20px;
+  width: 300px;
+}
+
+
+#conta{
+
+  float: right;
+}
+
+button{
+  width: 100px;
+  height: 30px;
+  
+}
+
+    </style>
+</head>
+    
+
+    <body>
+
+        <div class="primeira">
+      
+          <h1>REGISTA-TE</h1>
+
+          </div>
+        <div class="segunda">
+      
+      
+        <img src="imagens/registar.png" id="imagem1" alt="" width="100%" height="auto">
+      </div>
+      
+      <div class="terceira">
+    
+      
+        <h2>Preencha os dados:</h2>
+      
+
+            <form method="POST" action="processa_registro.php">
+                Nome:<br>
+                <input type="text" id="nome" name="nome" required><br><br>
+                Apelido:<br>
+                <input type="text" id="apelido" name="apelido"  required><br><br>
+                E-mail:<br>
+                <input type="text" id="email" name="email"  required><br><br>
+                Nome de Utilizador:<br>
+                <input type="text" id="user_name" name="user_name"  required><br><br>
+                Palavra-chave:<br>
+                <input type="password" id="password" name="password"  required><br><br>
+
+
+        
+                <button type="submit">Registar-se</button>
+
+                
+                <p id="conta" ><a id="registo" href="index.php">Voltar
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 256 512">
+                    <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/>
+                    </svg></a></p>
+
+            </form>     
+            
+      
+      
+          </form>
+          </div>
+      
+      </div>
+
+
+</body>
+</html>
